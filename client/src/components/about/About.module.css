@@ -7,6 +7,7 @@
   align-items: center;
   flex-direction: column;
   height: 180px;
+  margin-top: 70px;
 }
 
 .about h1{
@@ -43,10 +44,10 @@
 }
 
 .about_links button {
-  font-size: 15px;
+  font-size: 18px;
   border: none;
   margin-right: 10px;
-  height: 35px;
+  height: 40px;
   width: 120px;
   border: 2px solid #000;
 }
