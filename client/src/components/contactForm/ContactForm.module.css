@@ -1,0 +1,48 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin: 15px;
+}
+
+.form h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form label {
+  font-size: 20px;
+  padding: 0 5px;
+  margin-bottom: 5px;
+}
+
+.form input {
+  height: 25px;
+  padding: 0 5px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid #000;
+  outline: none;
+  background-color: transparent;
+  font-size: 17px;
+}
+.form textarea {
+  padding: 5px;
+  height: 100px;
+  resize: none;
+  border: none;
+  outline: none;
+  background-color: #eee;
+  font-size: 17px;
+}
+
+.form button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 6px;
+  outline: none;
+  border: 2px solid #000;
+  font-size: 25px;
+  height: 50px;
+}
+

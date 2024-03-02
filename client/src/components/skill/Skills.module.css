@@ -1,0 +1,71 @@
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.container h2{
+  font-size: 30px;
+}
+
+.container{
+    padding: 10px;
+    padding-bottom: 15px;
+}
+
+.container h2{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.skill {
+  height: 50px;
+  font-size: 20px;
+  background-color: #ddd;
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.skill h3 {
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+}
+
+.icon {
+  font-size: 30px;
+  font-weight: 400;
+  padding-right: 5px;
+}
+
+.icon_react {
+  color: #00c5f7;
+}
+
+.icon_node {
+  color: #5eac47;
+}
+
+.icon_postgreSQL {
+  color: #31648c;
+}
+.icon_js {
+  color: #000;
+}
+.icon_redux {
+  color: #7248b6;
+}
+.icon_html {
+  color: #dd4b25;
+}
+.icon_css{
+    color:#016db5 ;
+}
+.icon_sequelize{
+  color: #03aae8;
+}

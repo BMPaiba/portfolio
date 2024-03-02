@@ -1,0 +1,15 @@
+/* footer */
+.header {
+    background-color: #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+  }
+  .header img {
+    width: 50px;
+  }
+  
+  .bars {
+    font-size: 40px;
+  }
