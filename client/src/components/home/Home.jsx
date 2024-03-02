@@ -8,7 +8,7 @@ import ContactForm from "../contactForm/ContactForm";
 import Project from "../project/Project";
 import Skills from "../skill/Skills";
 import About from "../about/About";
-import Header from "../header/header";
+import Header from "../header/Header";
 export default function Home() {
   return (
     <>
