@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Project.module.css";
 import rickMortyImg from "../../assets/rickmorty.jpg";
+import logo from "../../assets/logo.png";
 import { FaGithub } from "react-icons/fa";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import countries from "../../assets/pi-countries.png";
@@ -8,42 +9,103 @@ import { FaArrowsRotate } from "react-icons/fa6";
 import { MdOutlinePlayCircle } from "react-icons/md";
 
 export default function Project() {
+  const url_countries = "https://countries-wzre.onrender.com/";
+  const repo_countries = "https://github.com/BMPaiba/PI-Countries-";
+  const repo_rickmorty = "https://github.com/BMPaiba/rick-and-morty-ft45a";
+
+
+
+    const descriptions = {
+      rickmorty:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, provident tenetur corporis sit explicabo veritatis distinctio, dolor sint nulla error est eligendi odio asperiores quam! Quod ea earum atque deleniti!",
+      countries:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, provident tenetur corporis sit explicabo veritatis distinctio, dolor sint nulla error est eligendi odio asperiores quam! Quod ea earum atque deleniti!",
+      marketplace: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, provident tenetur corporis sit explicabo veritatis distinctio, dolor sint nulla error est eligendi odio asperiores quam! Quod ea earum atque deleniti!",
+    };
+
+    const [isFlipped, setIsFlipped] = useState({
+      rickmorty: false,
+      countries: false,
+      marketplace: false,
+    });
+  
+    const handleFlip = (project) => {
+      setIsFlipped((prevState) => {
+        const newState = {};
+        Object.keys(prevState).forEach((key) => {
+          newState[key] = key === project ? !prevState[key] : false;
+        });
+        return newState;
+      });
+    };
+    
+  const handleClick = (linkedInUrl) => {
+    window.open(linkedInUrl, "_blank");
+  };
+
   return (
     <>
       <h2>Proyectos</h2>
       <div className={styles.project}>
         <div className={styles.project_itemI}>
-          <img src={rickMortyImg} alt="" />
+          {isFlipped["rickmorty"] ? (
+            <div>
+              <p>{descriptions["rickmorty"]}</p>
+            </div>
+          ) : (
+            <div>
+              <img src={rickMortyImg} alt="" />
+            </div>
+          )}
           <h4>Rick & Morty</h4>
+
           <div className={styles.project_itemI_buttons}>
-            <button>
+            <button onClick={() => handleClick(repo_rickmorty)}>
               <FaGithub />
             </button>
-            <button>
+            <button onClick={() => handleFlip("rickmorty")}>
               <FaArrowsRotate />
             </button>
-            <button>
+            <button onClick={() => handleClick(url_countries)}>
               <FaExternalLinkAlt />
             </button>
           </div>
         </div>
+
         <div className={styles.project_itemII}>
-          <img src={countries} alt="" />
+        {isFlipped["countries"] ? (
+            <div>
+              <p>{descriptions["countries"]}</p>
+            </div>
+          ) : (
+            <div>
+              <img src={countries} alt="" />
+            </div>
+          )}
+
           <h4>Proyecto de Bootcamp</h4>
           <div className={styles.project_itemII_buttons}>
-            <button>
+            <button onClick={() => handleClick(repo_countries)}>
               <FaGithub />
             </button>
-            <button>
+            <button onClick={() => handleFlip("countries")}>
               <FaArrowsRotate />
             </button>
-            <button>
+            <button onClick={() => handleClick(url_countries)}>
               <FaExternalLinkAlt />
             </button>
           </div>
         </div>
         <div className={styles.project_itemIII}>
-          <img src={countries} alt="" />
+        {isFlipped["marketplace"] ? (
+            <div>
+               <p>{descriptions["marketplace"]}</p>
+            </div>
+          ) : (
+            <div>
+              <img src={countries} alt="" />
+            </div>
+          )}
           <h4>Marketplace</h4>
         </div>
         <div className={styles.project_itemIV}></div>
@@ -51,7 +113,7 @@ export default function Project() {
           <button>
             <MdOutlinePlayCircle />
           </button>
-          <button>
+          <button onClick={() => handleFlip("marketplace")}>
             <FaArrowsRotate />
           </button>
         </div>

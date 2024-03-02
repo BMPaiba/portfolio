@@ -1,4 +1,4 @@
-/* footer */
+/* footer
 .header {
   background-color: #ccc;
   display: flex;
@@ -18,4 +18,110 @@
 
 .bars {
   font-size: 40px;
+} */
+
+/* configuro para desktop */
+
+.desplegable {
+  background-color: red;
 }
+
+.barras {
+  display: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+li {
+  list-style: none;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  display: block;
+}
+
+ul li a:hover {
+  background-color: #666;
+  color : #fff;
+}
+
+@media (max-width: 768px) {
+  .header_menu {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    /* padding: 15px; */
+    margin-bottom: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Un índice de apilamiento alto para estar por encima del texto */
+  }
+
+  .barras {
+    background-color: #ccc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 2px 5px #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+  }
+  .desplegable {
+    transform: translateY(-150%);
+    font-size: 16px;
+    width: 100%;
+    background-color: #666;
+    margin-top: 60px;
+    transition: transform 0.5s;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ccc;
+    font-weight: 500;
+  }
+  ul li a {
+    font-size: 18px;
+  }
+  /* abrir y cerrar menu */
+  .abrir_menu {
+    transform: translateY(0%);
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    transition: transform 0.5s;
+  }
+  .btnmenu {
+    font-size: 40px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    /* padding: 15px; */
+  }
+  .barras img {
+    width:45px;
+  }
+ 
+
+}
+
