@@ -50,14 +50,14 @@ export default function Project() {
         <div className={styles.project_itemI}>
           {isFlipped["rickmorty"] ? (
             <div>
-              <p>{descriptions["rickmorty"]}</p>
+              <p className={styles.project_itemI_description}>{descriptions["rickmorty"]}</p>
             </div>
           ) : (
             <div>
               <img src={rickMortyImg} alt="" />
             </div>
           )}
-          <h4>Rick & Morty</h4>
+          <h4 className={!isFlipped["rickmorty"] ? `${styles.imgActive}` : `${styles.imgDisactive}` }>Rick & Morty</h4>
 
           <div className={styles.project_itemI_buttons}>
             <button onClick={() => handleClick(repo_rickmorty)}>
@@ -75,7 +75,7 @@ export default function Project() {
         <div className={styles.project_itemII}>
         {isFlipped["countries"] ? (
             <div>
-              <p>{descriptions["countries"]}</p>
+              <p  className={styles.project_itemI_description}>{descriptions["countries"]}</p>
             </div>
           ) : (
             <div>
@@ -83,7 +83,7 @@ export default function Project() {
             </div>
           )}
 
-          <h4>Proyecto de Bootcamp</h4>
+          <h4 className={!isFlipped["countries"] ? `${styles.imgActive}` : `${styles.imgDisactive}`} >Proyecto de Bootcamp</h4>
           <div className={styles.project_itemII_buttons}>
             <button onClick={() => handleClick(repo_countries)}>
               <FaGithub />
@@ -99,14 +99,14 @@ export default function Project() {
         <div className={styles.project_itemIII}>
         {isFlipped["marketplace"] ? (
             <div>
-               <p>{descriptions["marketplace"]}</p>
+               <p  className={styles.project_itemI_description}>{descriptions["marketplace"]}</p>
             </div>
           ) : (
             <div>
               <img src={countries} alt="" />
             </div>
           )}
-          <h4>Marketplace</h4>
+          <h4 className={!isFlipped["marketplace"] ? `${styles.imgActive}` : `${styles.imgDisactive}`} >Marketplace</h4>
         </div>
         <div className={styles.project_itemIV}></div>
         <div className={styles.project_itemII_buttons}>
