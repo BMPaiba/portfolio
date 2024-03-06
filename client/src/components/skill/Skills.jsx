@@ -11,14 +11,54 @@ import { SiSequelize } from "react-icons/si";
 
 export default function Skills() {
   const skills = [
-    { name: "HTML", icon: <SiHtml5 className={`${styles.icon_html} ${styles.icon}`}  /> },
-    { name: "CSS", icon: <FaCss3Alt className={`${styles.icon_css} ${styles.icon}`}  /> },
-    { name: "JavaScript", icon: <SiJavascript className={`${styles.icon_js} ${styles.icon}`}  /> },
-    { name: "React", icon: <FaReact className={`${styles.icon_react} ${styles.icon}`} /> },
-    { name: "Redux", icon: <TbBrandRedux className={`${styles.icon_redux} ${styles.icon}`}  /> },
-    { name: "Node", icon: <FaNodeJs className={`${styles.icon_node} ${styles.icon}`}  /> },
-    { name: "PostgreSQL", icon: <BiLogoPostgresql className={`${styles.icon_postgreSQL} ${styles.icon}`}  /> },
-    { name: "Sequelize", icon: <SiSequelize className={`${styles.icon_sequelize} ${styles.icon}`}  /> },
+    {
+      name: "HTML",
+      icon: <SiHtml5 className={`${styles.icon_html} ${styles.icon}`} />,
+    },
+    {
+      name: "CSS",
+      icon: <FaCss3Alt className={`${styles.icon_css} ${styles.icon}`} />,
+    },
+    {
+      name: "JavaScript",
+      icon: <SiJavascript className={`${styles.icon_js} ${styles.icon}`} />,
+    },
+    {
+      name: "React",
+      icon: <FaReact className={`${styles.icon_react} ${styles.icon}`} />,
+    },
+    {
+      name: "Redux",
+      icon: <TbBrandRedux className={`${styles.icon_redux} ${styles.icon}`} />,
+    },
+    {
+      name: "Node",
+      icon: <FaNodeJs className={`${styles.icon_node} ${styles.icon}`} />,
+    },
+    {
+      name: "PostgreSQL",
+      icon: (
+        <BiLogoPostgresql
+          className={`${styles.icon_postgreSQL} ${styles.icon}`}
+        />
+      ),
+    },
+    {
+      name: "Sequelize",
+      icon: (
+        <SiSequelize className={`${styles.icon_sequelize} ${styles.icon}`} />
+      ),
+    },
+  ];
+  const iconsSkills = [
+    <SiHtml5 className={`${styles.icon_html} ${styles.icon}`} />,
+    <FaCss3Alt className={`${styles.icon_css} ${styles.icon}`} />,
+    <SiJavascript className={`${styles.icon_js} ${styles.icon}`} />,
+    <FaReact className={`${styles.icon_react} ${styles.icon}`} />,
+    <TbBrandRedux className={`${styles.icon_redux} ${styles.icon}`} />,
+    <FaNodeJs className={`${styles.icon_node} ${styles.icon}`} />,
+    <BiLogoPostgresql className={`${styles.icon_postgreSQL} ${styles.icon}`} />,
+    <SiSequelize className={`${styles.icon_sequelize} ${styles.icon}`} />,
   ];
 
   return (
@@ -32,6 +72,18 @@ export default function Skills() {
             </h3>
           </div>
         ))}
+      </div>
+      <div className={styles.icons}>
+        <SiHtml5 className={`${styles.icon_html} ${styles.icon}`} />
+        <FaCss3Alt className={`${styles.icon_css} ${styles.icon}`} />
+        <SiJavascript className={`${styles.icon_js} ${styles.icon}`} />
+        <FaReact className={`${styles.icon_react} ${styles.icon}`} />
+        <TbBrandRedux className={`${styles.icon_redux} ${styles.icon}`} />
+        <FaNodeJs className={`${styles.icon_node} ${styles.icon}`} />
+        <BiLogoPostgresql
+          className={`${styles.icon_postgreSQL} ${styles.icon}`}
+        />
+        <SiSequelize className={`${styles.icon_sequelize} ${styles.icon}`} />
       </div>
     </div>
   );

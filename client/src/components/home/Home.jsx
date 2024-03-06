@@ -11,7 +11,7 @@ import About from "../about/About";
 import Header from "../header/Header";
 export default function Home() {
   return (
-    <>
+    <div className={styles.container}>
       <div>
         <Header />
       </div>
@@ -29,6 +29,6 @@ export default function Home() {
       </div>
     
      
-    </>
+    </div>
   );
 }

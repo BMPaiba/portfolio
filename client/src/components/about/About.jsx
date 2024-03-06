@@ -3,6 +3,8 @@ import styles from "./About.module.css";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import CV from '../../assets/Brian-Paiba.pdf';
+import fondo from '../../assets/laptop-coffe.jpeg'
+import fondo3 from '../../assets/fondo3.jpg'
 
 export default function About() {
 
@@ -23,8 +25,9 @@ export default function About() {
       window.open(linkedInUrl, '_blank');
     };
 
-  return (
-    <>
+  return (<>
+    <div className={styles.container}>
+      {/* <img src={fondo3}  alt="" /> */}
       <div className={styles.about}>
         <h1>Brian Paiba</h1>
         <h3>fullstack developer</h3>
@@ -37,6 +40,7 @@ export default function About() {
         <button onClick={() => handleClick(github)}>Github</button>
         <button onClick={handleDownload}>Descarga CV</button>
       </div>
-    </>
+    </div>
+  </>
   );
 }

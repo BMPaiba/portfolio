@@ -1,69 +1,64 @@
-h2{
-  text-align: center;
-  font-size: 30px;
-  margin-bottom: 10px;
-}
+@media (max-width: 768px) {
+  h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
 
-.project {
-  display: grid;
-  grid-template-columns: 400px;
-  grid-template-rows: repeat(3, 400px);
-  grid-gap: 6px;
-  position: relative;
-}
-
-.project_itemI {
-  grid-area: 1 / 1 / 2 / 2;
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-
-
-
-.project_itemI img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-
-.project_itemI_buttons {
-  position: absolute;
-  height: 50px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  justify-content: space-around;
-  z-index: 1;
-  background-color: #fff;
-}
-
-.project_itemI_buttons button {
-  background-color: transparent;
-  border: 1.3px solid #000;
-  width: 50%;
-  outline: none;
-  font-size: 30px;
-}
-
-.project_itemI_description{
-  margin-top: 45px;
-  font-size: 17px;
-  font-weight: 400;
-}
-
-
-
-.project_itemII {
-    grid-area: 2 / 1 / 3 / 2;
+  .project {
+    display: grid;
+    grid-template-columns: 400px;
+    grid-template-rows: repeat(3, 400px);
+    grid-gap: 6px;
     position: relative;
-    display: 	flex;
+  }
+
+  .project_itemI {
+    grid-area: 1 / 1 / 2 / 2;
+    position: relative;
+    display: flex;
     justify-content: center;
   }
 
-  
+  .project_itemI img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .project_itemI_buttons {
+    position: absolute;
+    height: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    z-index: 1;
+    background-color: #fff;
+  }
+
+  .project_itemI_buttons button {
+    background-color: transparent;
+    border: 1.3px solid #000;
+    width: 50%;
+    outline: none;
+    font-size: 30px;
+  }
+
+  .project_itemI_description {
+    margin-top: 45px;
+    font-size: 17px;
+    font-weight: 400;
+  }
+
+  .project_itemII {
+    grid-area: 2 / 1 / 3 / 2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
   .project_itemII img {
     width: 100%;
     max-height: 100%;
@@ -72,7 +67,7 @@ h2{
     clip-path: polygon(0 0, 100% 0, 100% 95%, 0 95%);
     object-fit: cover;
   }
-  
+
   .project_itemII_buttons {
     position: absolute;
     height: 50px;
@@ -84,7 +79,7 @@ h2{
     z-index: 1;
     background-color: #fff;
   }
-  
+
   .project_itemII_buttons button {
     background-color: transparent;
     border: 1.3px solid #000;
@@ -93,7 +88,7 @@ h2{
     font-size: 30px;
   }
 
-  .imgActive{
+  .imgActive {
     position: absolute;
     top: 0;
     color: #fff;
@@ -103,8 +98,8 @@ h2{
     width: 100%;
     text-align: center;
   }
-  
-  .imgDisactive{
+
+  .imgDisactive {
     position: absolute;
     top: 0;
     color: #000;
@@ -115,14 +110,13 @@ h2{
     text-align: center;
   }
 
-
-.project_itemIII {
+  .project_itemIII {
     grid-area: 3 / 1 / 4 / 2;
     position: relative;
-    display: 	flex;
+    display: flex;
     justify-content: center;
   }
-    
+
   .project_itemIII img {
     width: 100%;
     max-height: 100%;
@@ -131,7 +125,7 @@ h2{
     clip-path: polygon(0 0, 100% 0, 100% 95%, 0 95%);
     object-fit: cover;
   }
-  
+
   .project_itemIII_buttons {
     position: absolute;
     height: 50px;
@@ -143,7 +137,7 @@ h2{
     z-index: 1;
     background-color: #fff;
   }
-  
+
   .project_itemIII_buttons button {
     background-color: transparent;
     border: 1.3px solid #000;
@@ -152,7 +146,75 @@ h2{
     font-size: 30px;
   }
 
-.project_itemIV {
-  grid-area: 4 / 1 / 5 / 2;
-  background-color: #999;
-} 
+  .project_itemIV {
+    grid-area: 4 / 1 / 5 / 2;
+    background-color: #999;
+  }
+  .mobile{
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .container{
+    display: none;
+  }
+
+  .mobile{
+    padding-top: 150px;
+    
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .mobile h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    border-bottom: 2px solid #000;
+  }
+ 
+  .projectI{
+    /* background-color: red; */
+    height: 300px;
+    display: flex;
+    padding: 30px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  .projectI img{
+    height: 100%;
+    border: 2px solid #000;
+    border-radius: 30px;
+  }
+  .projectI_description{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 100%;
+  }
+  .projectI_description h3{
+    text-align: center;
+    margin: -20px 0 20px 0;
+  }
+  .projectI_description p{
+    align-self: center;
+    text-align: center;
+    width: 75%;
+    margin-bottom: 20px;
+  }
+  .projectI_description_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+  }
+  .projectI_description_buttons_icon{
+    font-size: 35px;
+  }
+  .projectI_description_buttons_icon_play{
+    font-size: 50px;
+  }
+}

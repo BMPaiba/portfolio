@@ -47,3 +47,21 @@
   height: 50px;
 }
 
+@media (min-width: 769px){
+  .form{
+    margin: 0 auto;
+    width: 80%;
+    max-width: 900px;
+    padding-top: 150px;
+  }
+  .form h2{
+    border-bottom: 2px solid #000;
+  }
+  .form label, input, textarea, button {
+    width: 600px;
+    margin: 0 auto;
+  }
+  .form button {
+    width: 600px;
+  }
+}

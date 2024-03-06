@@ -1,30 +1,8 @@
-/* footer
-.header {
-  background-color: #ccc;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
-  box-shadow: 0 2px 5px #ccc;
-}
-.header img {
-  width: 50px;
-}
 
-.bars {
-  font-size: 40px;
-} */
 
-/* configuro para desktop */
-
-.desplegable {
+/* .desplegable {
   background-color: red;
-}
+} */
 
 .barras {
   display: none;
@@ -121,7 +99,30 @@ ul li a:hover {
   .barras img {
     width:45px;
   }
- 
-
+  .logo{
+    display: none;
+  }
 }
 
+@media (min-width: 769px) {
+  
+  .desplegable{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 120px;
+    background-color: #9993;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    
+  }
+  .logo{
+    height: 45px;
+  }
+ 
+}
