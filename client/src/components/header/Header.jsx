@@ -49,16 +49,16 @@ export default function Header() {
           <img src={logo} className={styles.logo} alt="" />
           <ul>
             <li>
-              <a href="#">Home</a>
+              <a href="#about">Sobre mí</a>
             </li>
             <li>
-              <a href="#">Proyectos</a>
+              <a href="#project">Proyectos</a>
             </li>
             <li>
-              <a href="#">Skills</a>
+              <a href="#skills">Skills</a>
             </li>
             <li>
-              <a href="#">Contacto</a>
+              <a href="#contact">Contacto</a>
             </li>
           </ul>
         </nav>

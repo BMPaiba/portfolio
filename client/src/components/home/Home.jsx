@@ -1,9 +1,5 @@
-import React, { useState } from "react";
+import React  from "react";
 import styles from "./Home.module.css";
-import logo from "../../assets/logo.png";
-import foto from "../../assets/foto-perfil.png";
-import { FaBars } from "react-icons/fa";
-import { BiCopy } from "react-icons/bi";
 import ContactForm from "../contactForm/ContactForm";
 import Project from "../project/Project";
 import Skills from "../skill/Skills";
@@ -12,23 +8,21 @@ import Header from "../header/Header";
 export default function Home() {
   return (
     <div className={styles.container}>
-      <div>
+      <div >
         <Header />
       </div>
-      <div>
+      <div id="about" >
         <About />
       </div>
-      <div className={styles.project}>
+      <div className={styles.project} id="project">
         <Project />
       </div>
-      <div className={styles.skills}>
+      <div className={styles.skills} id="skills">
         <Skills />
       </div>
-      <div className={styles.contact}>
+      <div className={styles.contact} id="contact">
         <ContactForm />
       </div>
-    
-     
     </div>
   );
 }

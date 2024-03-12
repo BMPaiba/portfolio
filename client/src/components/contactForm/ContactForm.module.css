@@ -47,6 +47,17 @@
   height: 50px;
 }
 
+.form button:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+  cursor: pointer;
+  background-color: #ccc;
+}
+
+.form button:not(:hover) {
+  transition: transform 0.5s;
+}
+
 @media (min-width: 769px){
   .form{
     margin: 0 auto;

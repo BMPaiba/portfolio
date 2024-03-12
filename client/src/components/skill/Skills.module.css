@@ -100,5 +100,13 @@
   .icon{
     font-size: 45px;
   }
+  .icon:hover {
+    transform: scale(1.5);
+    transition: transform 0.5s;
+    cursor: pointer;
+  }
+  .icon:not(:hover) {
+    transition: transform 0.5s;
+  }
 
 }

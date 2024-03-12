@@ -46,6 +46,16 @@
     font-size: 30px;
   }
 
+  .project_itemI_buttons button:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+    cursor: pointer;
+    background-color: #ccc;
+  }
+
+  button:not(:hover) {
+    transition: transform 0.5s;
+  }
   .project_itemI_description {
     margin-top: 45px;
     font-size: 17px;
@@ -150,43 +160,43 @@
     grid-area: 4 / 1 / 5 / 2;
     background-color: #999;
   }
-  .mobile{
+  .mobile {
     display: none;
   }
 }
 
 @media (min-width: 769px) {
-  .container{
+  .container {
     display: none;
   }
 
-  .mobile{
+  .mobile {
     padding-top: 150px;
-    
+
     width: 80%;
     max-width: 900px;
     margin: 0 auto;
   }
-  .mobile h2{
+  .mobile h2 {
     text-align: center;
     margin-bottom: 30px;
     font-size: 30px;
     border-bottom: 2px solid #000;
   }
- 
-  .projectI{
+
+  .projectI {
     /* background-color: red; */
     height: 300px;
     display: flex;
     padding: 30px 0;
     border-bottom: 1px solid #ccc;
   }
-  .projectI img{
+  .projectI img {
     height: 100%;
     border: 2px solid #000;
     border-radius: 30px;
   }
-  .projectI_description{
+  .projectI_description {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -194,11 +204,11 @@
     width: 600px;
     height: 100%;
   }
-  .projectI_description h3{
+  .projectI_description h3 {
     text-align: center;
     margin: -20px 0 20px 0;
   }
-  .projectI_description p{
+  .projectI_description p {
     align-self: center;
     text-align: center;
     width: 75%;
@@ -211,10 +221,22 @@
     width: 100%;
     gap: 30px;
   }
-  .projectI_description_buttons_icon{
+  .projectI_description_buttons_icon {
     font-size: 35px;
   }
-  .projectI_description_buttons_icon_play{
+  .projectI_description_buttons_icon_play {
     font-size: 50px;
+  }
+
+  .projectI_description_buttons_icon:hover,
+  .projectI_description_buttons_icon_play:hover    {
+    transform: scale(1.3);
+    transition: transform 0.5s;
+    cursor: pointer;
+  }
+  
+  .projectI_description_buttons_icon:not(:hover),
+  .projectI_description_buttons_icon_play:not(:hover) {
+    transition: transform 0.5s;
   }
 }
