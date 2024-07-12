@@ -1,0 +1,53 @@
+---
+import Badge from "./Badge.astro";
+import BadgeRedes from "./BadgeRedes.astro";
+import { GitHub } from "./icons";
+---
+
+<section class="w-full py-40 flex">
+  <div class="flex w-full items-center justify-center gap-12">
+    <img
+      src="../../public/assets/img-animada-computer.png"
+      alt="frontend developer"
+      class="size-52"
+    />
+    <div class="flex flex-col items-start m-auto gap-2">
+      <a
+        href="https://linkedin.com/in/brian-m-paiba"
+        target="_blank"
+        rel="noopener"
+        class="flex items-center transition md:justify-center md:hover:scale-105"
+      >
+        <Badge>Disponible para trabajar</Badge>
+      </a>
+      <h1 class="text-white text-6xl font-bold flex justify-center flex-row">
+        Hey, soy Brian <div class="flex justify-center items-center"></div>
+      </h1>
+      <h2 class="text-Green text-3xl font-bold">
+        {"< "}Front-End Developer{" />"}
+      </h2>
+      <p class="max-w-[600px] text-lg">
+        Desarrollador frontend apasionado por crear experiencias de usuario
+        intuitivas y atractivas. De Buenos Aires, Argentina.
+      </p>
+      <div class="flex">
+        <a
+          href="https://linkedin.com/in/brian-m-paiba"
+          target="_blank"
+          rel="noopener"
+          class="flex items-center transition md:justify-center md:hover:scale-105"
+        >
+          <BadgeRedes>LinkedIn</BadgeRedes>
+        </a>
+        <a
+          href="https://linkedin.com/in/brian-m-paiba"
+          target="_blank"
+          rel="noopener"
+          class="flex items-center transition md:justify-center md:hover:scale-105"
+        >
+          <BadgeRedes><GitHub /> GitHub</BadgeRedes>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
