@@ -1,0 +1,95 @@
+---
+// En el componente padre (por ejemplo, `Proyectos.astro`)
+import Card from "./Card.astro";
+import { Work, GitHub, External } from "./icons";
+import BadgeRedes from "./BadgeRedes.astro";
+---
+
+<section class="py-40">
+  <div class="flex items-center gap-4 pb-6">
+    <Work />
+    <h2 class="text-Green text-2xl md:text-3xl font-bold">Proyectos</h2>
+  </div>
+  <div class="flex flex-col gap-12">
+    <Card>
+      <img
+        src="/assets/full-contact-tv.png"
+        alt=""
+        class="size-64 object-cover rounded-xl"
+        slot="image"
+      />
+      <div slot="title">Full Contact TV</div>
+      <div slot="description" class="max-w-2xl">
+        Participé en el desarrollo del frontend de la landing page para el
+        programa "Full Contact TV", utilizando Next.js, y Tailwind para crear
+        una interfaz de usuario atractiva y funcional. Implementé un diseño
+        responsivo para asegurar una experiencia óptima en dispositivos móviles
+        y de escritorio. Además, optimicé las peticiones de YouTube integrando
+        una base de datos MongoDB para almacenar y gestionar los datos de los
+        videos, mejorando significativamente los tiempos de carga y la
+        eficiencia del sitio web.
+      </div>
+      <a
+        slot="links"
+        href="https://fullcontacttv.com.ar/"
+        target="_blank"
+        rel="noopener"
+        class="flex items-center transition md:justify-center md:hover:scale-105"
+      >
+        <BadgeRedes><External />Preview</BadgeRedes>
+      </a>
+    </Card>
+    <Card>
+      <img
+        src="/assets/matrix.png"
+        alt=""
+        class="size-64 object-cover rounded-xl"
+        slot="image"
+      />
+      <div slot="title">Matrix App</div>
+      <div slot="description" class="max-w-2xl">
+        Mejoré considerablemente la experiencia de usuario del frontend de una
+        aplicación móvil ya existente, utilizando React Native. Optimicé el
+        rendimiento y la fluidez de la interfaz. Implementé un diseño más
+        intuitivo y moderno, mejorando la navegación y la interacción del
+        usuario. Añadí animaciones y transiciones suaves para una experiencia
+        más atractiva.
+      </div>
+      <a
+        slot="links"
+        href="https://fullcontacttv.com.ar/"
+        target="_blank"
+        rel="noopener"
+        class="flex items-center transition md:justify-center md:hover:scale-105"
+      >
+        <BadgeRedes><External />Preview</BadgeRedes>
+      </a>
+    </Card>
+    <Card>
+      <img
+        src="/assets/charlie.png"
+        alt=""
+        class="size-64 object-cover rounded-xl"
+        slot="image"
+      />
+      <div slot="title">Charlie Web App</div>
+      <div slot="description" class="max-w-2xl">
+        Mejoré considerablemente la experiencia de usuario del frontend de una
+        aplicación móvil ya existente, utilizando React Native. Optimicé el
+        rendimiento y la fluidez de la interfaz. Implementé un diseño más
+        intuitivo y moderno, mejorando la navegación y la interacción del
+        usuario. Añadí animaciones y transiciones suaves para una experiencia
+        más atractiva.
+      </div>
+      <a
+        slot="links"
+        href="https://www.youtube.com/watch?v=LbkMOQ-xVGk&feature=youtu.be"
+        target="_blank"
+        rel="noopener"
+        class="flex items-center transition md:justify-center md:hover:scale-105"
+      >
+        <BadgeRedes><External />Preview</BadgeRedes>
+      </a>
+    </Card>
+  </div>
+</section>
