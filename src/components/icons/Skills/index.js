@@ -1,0 +1,6 @@
+export { default as HTML } from "./HTML.astro"
+export { default as CSS } from "./CSS.astro"
+export { default as React } from "./React.astro"
+export { default as Redux } from "./Redux.astro"
+export { default as Tailwind } from "./Tailwind.astro"
+export { default as NextJS } from "./NextJS.astro"
