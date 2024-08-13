@@ -4,11 +4,12 @@ import Footer from "../components/Footer.astro";
 import Project from "../components/Project.astro";
 import Skills from "../components/Skills.astro";
 import Layout from "../layouts/Layout.astro";
+import { SkillSection } from "../section";
 ---
 
 <Layout title="Brian Paiba Portfolio">
   <main class="">
-    <section id="home">
+     <section id="home">
       <Home />
     </section>
     <section id="about">
@@ -17,9 +18,7 @@ import Layout from "../layouts/Layout.astro";
     <section id="projects">
       <Project />
     </section>
-    <section id="skills">
-      <Skills />
-    </section>
+    <SkillSection client:load/>
     <section id="contact">
       <Footer />
     </section>

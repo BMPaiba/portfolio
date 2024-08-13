@@ -6,3 +6,7 @@ export { default as About } from "./About.astro"
 export { default as Card } from "./Card.astro"
 export { default as BadgeNextJS } from "./BadgeNextJS.astro"
 export { default as TechSkills } from "./TechSkills.astro"
+
+// nuevo
+export { default as Skill } from "./Skill.tsx"
+export { default as TitleH3 } from "./Title.tsx"
