@@ -1,5 +1,5 @@
 import React from 'react'
-import { Badge, ButtonComponent } from '../components'
+import {ButtonComponent } from '../components'
 import {FaGithub,FaLinkedin,MdAlternateEmail} from '../components/react-icons'
 
 function Hero() {
