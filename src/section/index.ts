@@ -1,3 +1,5 @@
 export {default as SkillSection } from "./Skills.tsx"
 export {default as AboutSection } from "./About.astro"
 export {default as HeroSection } from "./Hero.tsx"
+export {default as FooterSection } from "./Footer.astro"
+export {default as ProjectSection} from "./Project.tsx"

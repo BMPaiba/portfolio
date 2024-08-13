@@ -1,8 +1,0 @@
-export { default as GitHub } from "./GitHub.astro"
-export { default as LinkedIn } from "./LinkedIn.astro"
-export { default as Download } from "./Download.astro"
-export { default as People } from "./People.astro"
-export { default as Work } from "./Work.astro"
-export { default as External } from "./External.astro"
-export { default as NextJS } from "./NextJS.astro"
-export { default as Tailwind } from "./Tailwind.astro"

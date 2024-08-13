@@ -1,22 +1,20 @@
 ---
-import {  Home } from "../components";
-import Footer from "../components/Footer.astro";
-import Project from "../components/Project.astro";
-import Skills from "../components/Skills.astro";
 import Layout from "../layouts/Layout.astro";
-import { AboutSection, HeroSection, SkillSection } from "../section";
+import {
+  AboutSection,
+  FooterSection,
+  HeroSection,
+  ProjectSection,
+  SkillSection,
+} from "../section";
 ---
 
 <Layout title="Brian Paiba Portfolio">
   <main class="">
     <HeroSection />
-      <AboutSection />
-    <section id="projects">
-      <Project />
-    </section>
-    <SkillSection client:load/>
-    <section id="contact">
-      <Footer />
-    </section>
+    <AboutSection />
+    <ProjectSection />
+    <SkillSection client:load />
+    <FooterSection />
   </main>
 </Layout>
