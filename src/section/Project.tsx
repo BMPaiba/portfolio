@@ -3,7 +3,7 @@ import { dataProjects } from "../data";
 
 function Project() {
   return (
-    <section className="py-40">
+    <section className="py-40" id="projects">
       <TitleH3 title="Ultimos Proyectos" />
       <div className="flex flex-col gap-12">
         {dataProjects.map((element, index) => (
