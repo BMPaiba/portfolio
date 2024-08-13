@@ -1,3 +1,8 @@
+//? icons 
+export { FaGithub } from "react-icons/fa";
+export { FaLinkedin } from "react-icons/fa";
+export { MdAlternateEmail } from "react-icons/md";
+
 // ! TECH SKILLS
 // html - css
 export { FaHtml5 } from "react-icons/fa";

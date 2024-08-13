@@ -17,9 +17,9 @@ import { Skill} from "../components";
 import { TitleH3 } from "../components";
 function SkillSection() {
   return (
-    <section className="" id="skills" >
+    <section className="max-w-[1000px] mx-auto" id="skills" >
       <TitleH3 title="Habilidades Tecnicas"/>
-      <div className="flex items-center justify-center flex-wrap max-w-[800px] gap-12">
+      <div className="flex items-center justify-center flex-wrap max-w-[800px] mx-auto gap-12">
       <Skill Icon={FaHtml5} label="HTML" iconsStyles="text-[#f4460a]" />
       <Skill Icon={IoLogoCss3} label="CSS" iconsStyles="text-[#129CD8]" />
       <Skill Icon={SiJavascript} label="Javascript" iconsStyles="text-[#EFD81D]" />
