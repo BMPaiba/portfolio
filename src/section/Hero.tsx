@@ -35,9 +35,9 @@ function Hero() {
           intuitivas y atractivas. De Buenos Aires, Argentina.
         </p>
         <div className="flex flex-wrap gap-4">
-         <ButtonComponent Icon={FaGithub} label="GitHub" iconsStyles='text-[#fff]'/>
-         <ButtonComponent Icon={FaLinkedin} label="LinkedIn" iconsStyles='text-[#fff]'/>
-         <ButtonComponent Icon={MdAlternateEmail} label="Contáctame" iconsStyles='text-[#fff]'/>
+         <ButtonComponent Icon={FaGithub} label="GitHub" iconsStyles='text-[#fff]' link='https://www.github.com/bmpaiba'/>
+         <ButtonComponent Icon={FaLinkedin} label="LinkedIn" iconsStyles='text-[#fff]' link='https://www.linkedin.com/in/brian-m-paiba/'/>
+         <ButtonComponent Icon={MdAlternateEmail} label="Contáctame" iconsStyles='text-[#fff]' link="mailto:brianmanuelpaiba@outlook.es"/>
         </div>
       </div>
     </div>
